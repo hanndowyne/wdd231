@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description"
+        content="Home page for WDD231 portfolio - Hann Dowyne Valcourt. Responsive layout, dynamic course list, and accessibility best practices." />
+    <meta name="author" content="Hann Dowyne Valcourt" />
+    <title>Home | WDD231 — Hann Dowyne Valcourt</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <a class="logo-link" href="index.html" aria-label="Home - Hann Dowyne Valcourt">
+                <svg class="logo" width="56" height="56" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                    <rect width="64" height="64" rx="8" fill="#0077B6"></rect>
+                    <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="28" font-family="Montserrat"
+                        font-weight="700">ℋ</text>
+                </svg>
+            </a>
+
+            <div class="site-title">
+                <span class="name">Hann Dowyne Valcourt</span>
+                <small class="subtitle">WDD231 — Course Home Page</small>
+            </div>
+
+            <button id="navToggle" class="nav-toggle" aria-controls="primaryNav" aria-expanded="false"
+                aria-label="Open navigation">
+                <span class="hamburger" aria-hidden="true">☰</span>
+            </button>
+
+            <nav id="primaryNav" class="primary-nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="chamber/index.html">Chamber</a></li>
+                    <li><a href="final/index.html">Final</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="maincontent">
+        <h1>Home</h1>
+
+        <div class="grid">
+            <section class="about" id="about">
+                <h2>About Me</h2>
+                <p>Hello, I'm <strong>Hann Dowyne Valcourt</strong>. I enjoy web development, and
+                    learning technologies. I like anime, nature, and reading. This page demonstrates responsive design,
+                    accessibility, and dynamic JS features required for WDD231.</p>
+                <p>I built the course list below dynamically with JavaScript and included filtering and credit totals.
+                </p>
+            </section>
+
+            <aside class="profile" aria-label="profile photo">
+
+                <img src="images/hann.webp" alt="Portrait of Hann Dowyne Valcourt" width="400" height="400"
+                    loading="lazy">
+            </aside>
+
+            <section class="courses" id="courses-section" aria-labelledby="courses-heading">
+                <h2 id="courses-heading">Web & Computer Programming — Certificate Courses</h2>
+
+                <div class="controls" role="toolbar" aria-label="Course filters">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-btn" data-filter="wdd" aria-pressed="false">WDD Courses</button>
+                    <button class="filter-btn" data-filter="cse" aria-pressed="false">CSE Courses</button>
+                </div>
+
+                <div id="course-stats" aria-live="polite" class="course-stats">
+                    <span id="total-credit">Total Credits: 0</span>
+                    <span id="display-count" style="margin-left:1rem;">Courses shown: 0</span>
+                </div>
+
+                <div id="course-container" class="course-grid" aria-live="polite">
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="socials">
+                <a href="https://github.com/yourgithubusername" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="#" target="_blank" rel="noopener">X</a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> | Hann Dowyne Valcourt | United States</p>
+                <p id="lastModified">Last Modified: </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

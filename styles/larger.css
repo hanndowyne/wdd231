@@ -1,0 +1,67 @@
+@media screen and (min-width: 640px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0;
+        align-items: center;
+        background: none;
+        border-top: none;
+    }
+
+    .primary-nav {
+        width: auto;
+    }
+
+    .header-inner {
+        align-items: center;
+        padding: 1.25rem;
+    }
+
+    .site-title {
+        text-align: left;
+        margin-left: 0.5rem;
+    }
+
+
+    .grid {
+        grid-template-columns: 1fr 360px;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .courses {
+        grid-column: 1 / -1;
+        margin-top: 0.5rem;
+    }
+
+    
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-footer {
+        padding: 1.25rem;
+    }
+
+    .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        padding: 2rem;
+    }
+}
