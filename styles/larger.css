@@ -33,7 +33,7 @@
         gap: 2rem;
     }
 
-    /* ✅ Keep About + Goals on left and Profile on right */
+
     .about,
     .goals {
         grid-column: 1;

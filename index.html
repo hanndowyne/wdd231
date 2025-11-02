@@ -25,6 +25,9 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -62,27 +65,31 @@
         <h1>Home</h1>
 
         <div class="grid">
-            <section class="about" id="about">
+
+
+            <section class="card about" id="about">
                 <h2>About Me</h2>
-                <p>Hello, I'm <strong>Hann Dowyne Valcourt</strong>. I enjoy web development, and
+                <p>Hello, I'm <strong>Hann Dowyne Valcourt</strong>. I enjoy web development and
                     learning technologies. I like anime, nature, and reading. This page demonstrates responsive design,
                     accessibility, and dynamic JS features required for WDD231.</p>
                 <p>I built the course list below dynamically with JavaScript and included filtering and credit totals.
                 </p>
             </section>
 
-            <aside class="profile" aria-label="profile photo">
-
+            <aside class="card profile" aria-label="profile photo">
                 <img src="images/hann.webp" alt="Portrait of Hann Dowyne Valcourt" width="400" height="400"
                     loading="lazy">
             </aside>
 
-            <section class="goals">
+
+            <section class="card goals">
                 <h2>My Goals</h2>
-                <p>My goal is to become a skilled web developer and continue learning new technologies through BYU Pathway Worldwide.</p>
+                <p>My goal is to become a skilled web developer and continue learning new technologies through BYU
+                    Pathway Worldwide.</p>
             </section>
 
-            <section class="courses" id="courses-section" aria-labelledby="courses-heading">
+
+            <section class="card courses" id="courses-section" aria-labelledby="courses-heading">
                 <h2 id="courses-heading">Web & Computer Programming — Certificate Courses</h2>
 
                 <div class="controls" role="toolbar" aria-label="Course filters">
@@ -96,9 +103,7 @@
                     <span id="display-count" style="margin-left:1rem;">Courses shown: 0</span>
                 </div>
 
-                <div id="course-container" class="course-grid" aria-live="polite">
-
-                </div>
+                <div id="course-container" class="course-grid" aria-live="polite"></div>
             </section>
         </div>
     </main>
