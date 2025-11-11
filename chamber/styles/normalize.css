@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 *,
@@ -40,4 +40,6 @@ picture {
 button {
     font: inherit;
     cursor: pointer;
+    border: none;
+    background: none;
 }

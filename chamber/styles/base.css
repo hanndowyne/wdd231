@@ -1,10 +1,10 @@
 :root {
-    --primary: #3B90C4;
-    --accent: #000000;
+    --primary: #1E3A8A;
+    --accent: #1E3A8A;
     --bg: #F5F7FA;
     --card: #FFFFFF;
-    --text: #1A1A1A;
-    --muted: #6B7280;
+    --text: #FFFFFF;
+    --muted: #1A1A1A;
     --radius: 10px;
     --container-width: 1300px;
 }
@@ -86,7 +86,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: var(--accent);
+    color: var(--card);
 }
 
 
