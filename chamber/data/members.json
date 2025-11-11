@@ -1,0 +1,73 @@
+[
+    {
+        "name": "Blue Bay Café",
+        "tagline": "Fresh local coffee & pastries",
+        "address": "12 Ocean Drive",
+        "phone": "(123) 555-1010",
+        "website": "https://bluebay.example.com",
+        "image": "images/members/member1.jpg",
+        "level": 1,
+        "email": "contact@bluebay.example.com"
+    },
+
+    {
+        "name": "TechNova Solutions",
+        "tagline": "IT services & consulting",
+        "address": "45 Commerce Blvd",
+        "phone": "(123) 555-2020",
+        "website": "https://technova.example.com",
+        "image": "images/members/member2.jpg",
+        "level": 3,
+        "email": "hello@technova.example.com"
+    },
+    {
+        "name": "Sunrise Realty",
+        "tagline": "Homes & property services",
+        "address": "200 Market Street",
+        "phone": "(123) 555-3030",
+        "website": "https://sunriserealty.example.com",
+        "image": "images/members/member7.jpg",
+        "level": 2,
+        "email": "info@sunriserealty.example.com"
+    },
+    {
+        "name": "Greenfields Nursery",
+        "tagline": "Garden supplies & plants",
+        "address": "8 Green Lane",
+        "phone": "(123) 555-4040",
+        "website": "https://greenfields.example.com",
+        "image": "images/members/member3.jpg",
+        "level": 1,
+        "email": "support@greenfields.example.com"
+    },
+    {
+        "name": "Harbor Bank",
+        "tagline": "Local banking since 1950",
+        "address": "77 Bank Ave",
+        "phone": "(123) 555-5050",
+        "website": "https://harborbank.example.com",
+        "image": "images/members/member4.jpg",
+        "level": 3,
+        "email": "customerservice@harborbank.example.com"
+    },
+    {
+        "name": "Starlight Bakery",
+        "tagline": "Artisan breads & cakes",
+        "address": "33 Baker's Row",
+        "phone": "(123) 555-6060",
+        "website": "https://starlight.example.com",
+        "image": "images/members/member5.jpg",
+        "level": 1,
+        "email": "orders@starlight.example.com"
+    },
+    {
+        "name": "Ocean View Tours",
+        "tagline": "Guided tours & excursions",
+        "address": "5 Pier Lane",
+        "phone": "(123) 555-7070",
+        "website": "https://oceanview.example.com",
+        "image": "images/members/member6.jpg",
+        "level": 2,
+        "email": "bookings@oceanview.example.com"
+    }
+]
