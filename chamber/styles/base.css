@@ -1,5 +1,5 @@
 :root {
-    --primary: #4A9DCB;
+    --primary: #3B90C4;
     --accent: #000000;
     --bg: #F5F7FA;
     --card: #FFFFFF;
@@ -30,44 +30,19 @@ body {
 }
 
 
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary);
     color: white;
-    padding: 0.75rem 2rem;
+    padding: 1rem 3rem;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    margin: 0;
-}
-
-
-
-main,
-.hero,
-section:first-of-type {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-
-
-.hero {
-    background: linear-gradient(90deg, rgba(74, 157, 203, 0.1), rgba(74, 157, 203, 0.2));
-    border-radius: 12px;
-    height: 200px;
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 2rem;
-}
-
-
-.container {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 0 2rem;
+    width: 100%;
 }
 
 
@@ -85,7 +60,7 @@ header .logo img {
 
 header h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #fff;
 }
@@ -98,7 +73,7 @@ header h1 {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 1.8rem;
+    gap: 2rem;
 }
 
 nav a {
@@ -116,12 +91,37 @@ nav a.active {
 
 
 
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+main {
+    padding-top: 1rem;
+    margin-top: 0;
+}
+
+
+.hero {
+    background: linear-gradient(90deg, rgba(59, 144, 196, 0.15), rgba(59, 144, 196, 0.25));
+    border-radius: 12px;
+    height: 240px;
+    width: 100%;
+    margin: 0 auto 2.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     color: var(--accent);
-    margin-bottom: 1rem;
+    margin: 1.5rem 0 1rem;
 }
 
 h2,
@@ -149,7 +149,7 @@ h3 {
     border: 2px solid var(--primary);
     color: var(--primary);
     font-weight: 700;
-    padding: 0.5rem 1rem;
+    padding: 0.55rem 1.1rem;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -162,7 +162,7 @@ h3 {
 }
 
 #membershipFilter {
-    padding: 0.5rem;
+    padding: 0.6rem 0.8rem;
     border-radius: 8px;
     border: 1px solid #ccc;
     font-weight: 600;
@@ -172,25 +172,26 @@ h3 {
 .members-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
 }
 
 .member {
     background: var(--card);
     border-radius: var(--radius);
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid #E5E7EB;
-    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .member:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
 }
 
 .member img {
@@ -201,9 +202,9 @@ h3 {
 }
 
 .member h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--primary);
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
 }
 
 .member p {
@@ -211,13 +212,14 @@ h3 {
     font-size: 0.95rem;
 }
 
-/* FOOTER */
+
 .site-footer {
     background: var(--accent);
     color: white;
-    padding: 2rem 1rem;
-    margin-top: 3rem;
+    padding: 3rem 2rem 2rem;
+    margin-top: 4rem;
 }
+
 
 .footer-inner {
     max-width: var(--container-width);
@@ -229,9 +231,11 @@ h3 {
     align-items: flex-start;
 }
 
+
 .footer-inner h3 {
     color: var(--primary);
 }
+
 
 .footer-inner address {
     line-height: 1.4;
@@ -253,6 +257,22 @@ h3 {
 }
 
 
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 1.2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        height: 180px;
+    }
+}
+
+
 @media (max-width: 768px) {
     #menuButton {
         display: block;
@@ -260,6 +280,7 @@ h3 {
         border: none;
         color: white;
         font-size: 2rem;
+        cursor: pointer;
     }
 
     nav ul {
@@ -267,8 +288,7 @@ h3 {
         flex-direction: column;
         background-color: var(--primary);
         width: 100%;
-        margin-top: 1rem;
-        padding: 0;
+        padding: 1rem 0;
     }
 
     nav.open ul {
