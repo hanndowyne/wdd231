@@ -18,8 +18,15 @@ body {
     padding: 0;
 }
 
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 #navMenu {
-    display: none;
+    display: flex;
+    gap: 1rem;
 }
 
 #navMenu.open {
@@ -30,12 +37,6 @@ h2 {
     text-align: center;
     margin: 2rem 0;
     color: var(--primary);
-}
-
-.container {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 0 2rem;
 }
 
 
@@ -80,7 +81,6 @@ h2 {
 .membership-form input[type="submit"]:hover {
     background: var(--accent);
 }
-
 
 .membership-cards {
     display: grid;
@@ -128,7 +128,6 @@ h2 {
     font-weight: 600;
 }
 
-
 @keyframes slideUp {
     from {
         transform: translateY(30px);
@@ -140,7 +139,6 @@ h2 {
         opacity: 1;
     }
 }
-
 
 dialog {
     border: none;
@@ -171,13 +169,6 @@ dialog button.close:hover {
     background: var(--accent);
 }
 
-#navMenu {
-    display: flex;
-    gap: 1rem;
-}
-
-
-
 @media (max-width: 768px) {
     .membership-form {
         width: 90%;
@@ -201,7 +192,7 @@ dialog button.close:hover {
         z-index: 1000;
     }
 
-    #navMenu.active {
+    #navMenu.open {
         display: flex;
     }
 }
