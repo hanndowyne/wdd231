@@ -3,11 +3,14 @@
     --accent: #1E3A8A;
     --bg: #F5F7FA;
     --card: #FFFFFF;
-    --text: #1a1a1a;
+    --text: #1A1A1A;
     --muted: #1A1A1A;
+    --gray: #CCCCCC;
+    --white: #FFFFFF;
     --radius: 10px;
     --container-width: 1300px;
 }
+
 
 
 body {
@@ -24,20 +27,18 @@ body {
     padding: 0 2rem;
 }
 
-#navMenu {
-    display: flex;
-    gap: 1rem;
-}
-
-#navMenu.open {
-    display: block;
-}
-
 h2 {
     text-align: center;
     margin: 2rem 0;
     color: var(--primary);
 }
+
+
+#navMenu {
+    display: flex;
+    gap: 1rem;
+}
+
 
 
 .membership-form {
@@ -64,14 +65,14 @@ h2 {
     margin-top: 0.3rem;
     padding: 0.6rem;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gray);
     font-size: 1rem;
     font-family: inherit;
 }
 
 .membership-form input[type="submit"] {
     background: var(--primary);
-    color: white;
+    color: var(--white);
     border: none;
     font-weight: 700;
     cursor: pointer;
@@ -81,6 +82,8 @@ h2 {
 .membership-form input[type="submit"]:hover {
     background: var(--accent);
 }
+
+
 
 .membership-cards {
     display: grid;
@@ -128,6 +131,8 @@ h2 {
     font-weight: 600;
 }
 
+
+
 @keyframes slideUp {
     from {
         transform: translateY(30px);
@@ -139,6 +144,8 @@ h2 {
         opacity: 1;
     }
 }
+
+
 
 dialog {
     border: none;
@@ -156,7 +163,7 @@ dialog h3 {
 
 dialog button.close {
     background: var(--primary);
-    color: #fff;
+    color: var(--white);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 6px;
@@ -169,7 +176,10 @@ dialog button.close:hover {
     background: var(--accent);
 }
 
+
+
 @media (max-width: 768px) {
+
     .membership-form {
         width: 90%;
         padding: 1.5rem;
