@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Harmony Chamber</title>
+    <meta name="description"
+        content="Apply to join the Harmony Chamber of Commerce. Complete our membership form to select your level and share your organization details.">
+    <meta name="author" content="Hann Dowyne Valcourt" />
+    <meta property="og:title" content="Chamber of Commerce" />
+    <meta property="og:description"
+        content="Apply to join the Harmony Chamber of Commerce. Complete our membership form to select your level and share your organization details.">
+    <meta property="og:url" content="https://hanndowyne.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://hanndowyne.github.io/wdd231/index/images/hero.jpeg">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Chamber Logo">
+            <h1>Harmony Chamber of Commerce</h1>
+        </div>
+
+        <button id="menuButton" aria-label="Toggle navigation menu">☰</button>
+
+        <nav id="primaryNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Join the Chamber</h2>
+        <form class="membership-form" method="get" action="thankyou.html">
+            <label>
+                First Name
+                <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+            <label>
+                Last Name
+                <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+            <label>
+                Organizational Title
+                <input type="text" name="orgTitle" title="Enter your title" autocomplete="organization-title"
+                    pattern="[A-Za-z\s-]{7,}" required>
+            </label>
+            <label>
+                Email
+                <input type="email" name="email" title="Enter your email" placeholder="example@email.com"
+                    autocomplete="email" required>
+            </label>
+            <label>
+                Mobile Number
+                <input type="tel" name="mobile" title="Enter your mobile number" autocomplete="tel" required>
+            </label>
+            <label>
+                Organization Name
+                <input type="text" name="orgName" title="Enter organization name" autocomplete="organization" required>
+            </label>
+            <label>
+                Membership Level
+                <select name="membership" title="Select membership level" required>
+                    <option value="">Select Level</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label>
+                Organization Description
+                <textarea name="orgDesc" title="Describe your organization"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Submit Application">
+        </form>
+
+        <div class="membership-cards">
+            <div class="card">
+                <h3>NP Membership</h3>
+                <a href="#" data-modal="npModal">See Benefits</a>
+            </div>
+            <div class="card">
+                <h3>Bronze Membership</h3>
+                <a href="#" data-modal="bronzeModal">See Benefits</a>
+            </div>
+            <div class="card">
+                <h3>Silver Membership</h3>
+                <a href="#" data-modal="silverModal">See Benefits</a>
+            </div>
+            <div class="card">
+                <h3>Gold Membership</h3>
+                <a href="#" data-modal="goldModal">See Benefits</a>
+            </div>
+        </div>
+
+        <!-- Modals for each membership -->
+        <dialog id="npModal" role="dialog" aria-modal="true">
+            <h3>NP Membership Benefits</h3>
+            <p>Access to events, networking, and more!</p>
+            <button class="close">Close</button>
+        </dialog>
+        <dialog id="bronzeModal" role="dialog" aria-modal="true">
+            <h3>Bronze Membership Benefits</h3>
+            <p>Event discounts, advertising opportunities, and networking!</p>
+            <button class="close">Close</button>
+        </dialog>
+        <dialog id="silverModal" role="dialog" aria-modal="true">
+            <h3>Silver Membership Benefits</h3>
+            <p>All Bronze benefits plus spotlight position on homepage and training sessions!</p>
+            <button class="close">Close</button>
+        </dialog>
+        <dialog id="goldModal" role="dialog" aria-modal="true">
+            <h3>Gold Membership Benefits</h3>
+            <p>All Silver benefits plus premium advertising, VIP events, and exclusive perks!</p>
+            <button class="close">Close</button>
+        </dialog>
+
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner container">
+            <div class="contact">
+                <h3>Chamber of Commerce</h3>
+                <address>
+                    123 Main Street<br>
+                    Your City, Country 00000<br>
+                    email: <a href="mailto:info@chamber.org">info@chamber.org</a><br>
+                    (123) 555-0000
+                </address>
+            </div>
+            <div class="socials" aria-label="Social links">
+                <!-- social SVGs -->
+            </div>
+            <div class="meta">
+                <p>WDD231 Class Project — Hann Dowyne Valcourt</p>
+                <p>&copy; <span id="currentYear"></span> Chamber of Commerce</p>
+                <p id="lastModified">Last Modified: </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

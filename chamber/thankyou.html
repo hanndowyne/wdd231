@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Harmony Chamber</title>
+    <meta name="description" content="Thank you for submitting your membership application.">
+    <meta name="author" content="Hann Dowyne Valcourt">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/navigation.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Chamber Logo">
+            <h1>Harmony Chamber of Commerce</h1>
+        </div>
+
+        <button id="menuButton" aria-label="Toggle navigation menu">☰</button>
+
+        <nav id="primaryNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Thank You for Your Application!</h2>
+        <p>Here is the information you submitted:</p>
+        <ul id="formData">
+            <li>First Name: <span id="firstName"></span></li>
+            <li>Last Name: <span id="lastName"></span></li>
+            <li>Email: <span id="email"></span></li>
+            <li>Mobile: <span id="mobile"></span></li>
+            <li>Organization Name: <span id="orgName"></span></li>
+            <li>Organizational Title: <span id="orgTitle"></span></li>
+            <li>Membership Level: <span id="membership"></span></li>
+            <li>Organization Description: <span id="orgDesc"></span></li>
+            <li>Submitted On: <span id="timestamp"></span></li>
+        </ul>
+    </main>
+
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner container">
+            <div class="contact">
+                <h3>Chamber of Commerce</h3>
+                <address>
+                    123 Main Street<br>
+                    Your City, Country 00000<br>
+                    email: <a href="mailto:info@chamber.org">info@chamber.org</a><br>
+                    (123) 555-0000
+                </address>
+            </div>
+
+            <div class="socials" aria-label="Social links">
+
+                <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                    <svg width="36" height="36" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="#1E3A8A" />
+                        <path d="M10 8v8l6-4z" fill="#fff" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="X">
+                    <svg width="36" height="36" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="#1E3A8A" />
+                        <path
+                            d="M7 10c1 0 1.5-1 2.5-1-1 0-1.5 1.5-1.5 2.5 0 .2 0 .4.1.6 1-.2 2.1-1 2.7-1.7-.6 1.2-1.6 2.2-2.6 2.6 0 0 1.6.9 3.2.3 1.1-.4 1.9-1.4 2.4-2.5.6-.7 1-1.5 1-2.5 0-.2 0-.4 0-.6 1-.7 1.6-1.7 2-2.8-.9.4-1.8.6-2.7.7.9-.8 1.6-1.9 1.8-3.1-.8.5-1.6.8-2.5 1z"
+                            fill="#fff" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg width="36" height="36" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="#1E3A8A" />
+                        <path
+                            d="M8 10h2v7H8zM9 7.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM12 10h2v1c.9-1.5 3-1.7 3 1v5h-2v-4c0-1.2-.6-1.6-1-1.6s-1 .6-1 1.6v4h-2z"
+                            fill="#fff" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="meta">
+                <p>WDD231 Class Project — Hann Dowyne Valcourt</p>
+                <p>&copy; <span id="currentYear"></span> Chamber of Commerce</p>
+                <p id="lastModified">Last Modified: </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('firstName').textContent = params.get('firstName') || '';
+        document.getElementById('lastName').textContent = params.get('lastName') || '';
+        document.getElementById('email').textContent = params.get('email') || '';
+        document.getElementById('mobile').textContent = params.get('mobile') || '';
+        document.getElementById('orgName').textContent = params.get('orgName') || '';
+        document.getElementById('orgTitle').textContent = params.get('orgTitle') || '';
+        document.getElementById('membership').textContent = params.get('membership') || '';
+        document.getElementById('orgDesc').textContent = params.get('orgDesc') || '';
+        document.getElementById('timestamp').textContent = params.get('timestamp') || '';
+    </script>
+</body>
+
+</html>
