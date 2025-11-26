@@ -140,12 +140,12 @@ dialog {
 
 dialog h3 {
     margin-top: 0;
-    color: var(--primary);
+    color: var(--white);
 }
 
 dialog button.close {
     background: var(--primary);
-    color: var(--white);
+    color: var(--white) !important;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 6px;
