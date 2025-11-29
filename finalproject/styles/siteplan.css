@@ -1,0 +1,116 @@
+:root {
+    --primary: #FF6F61;
+    --accent: #FFD8C2;
+    --bg: #FFFFFF;
+    --text: #2A2A2A;
+    --card: #FFFFFF;
+    --radius: 12px;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --container-width: 1200px;
+    --white: #ffffff;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 0;
+}
+
+
+header {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: var(--white);
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+    color: var(--white);
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+}
+
+main {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin: 40px 0;
+    padding: 25px;
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary);
+}
+
+
+.color-list {
+    list-style: none;
+    padding: 0;
+}
+
+.color-list li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.color {
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.color.primary {
+    background: var(--primary);
+}
+
+.color.accent {
+    background: var(--accent);
+}
+
+
+img {
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    margin: 10px auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+
+
+footer {
+    background: linear-gradient(135deg, var(--accent), var(--primary));
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.95rem;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    margin-top: 40px;
+}
