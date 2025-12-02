@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chamber of Commerce — Directory</title>
+    <meta name="description"
+        content="Directory of chamber members for Chamber of Commerce. Find local businesses, contact details and membership levels.">
+    <meta name="author" content="Hann Dowyne Valcourt" />
+    <meta property="og:title" content="Chamber of Commerce Directory" />
+    <meta property="og:description"
+        content="Discover local member businesses. Contact info, membership level, and quick links.">
+    <meta property="og:url" content="https://hanndowyne.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://hanndowyne.github.io/wdd231/chamber/images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Chamber of Commerce Logo" />
+            <h1>Chamber of Commerce</h1>
+        </div>
+
+        <button id="menuButton" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+
+        <nav id="primaryNav" class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover-page">
+        <section class="hero">
+            <div class="container">
+                <h2>Discover Miami</h2>
+                <p class="lead">Eight hand-picked places to visit, explore, and partner with in our region.</p>
+                <div id="visit-message" class="visit-message" aria-live="polite"></div>
+            </div>
+        </section>
+
+
+        <section class="cards-area container">
+          
+            <div class="discover-grid" id="discoverGrid" role="list"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner container">
+            <div class="contact">
+                <h3>Chamber of Commerce</h3>
+                <address>
+                    123 Main Street<br>
+                    Your City, Country 00000<br>
+                    email: <a href="mailto:info@chamber.org">info@chamber.org</a><br>
+                    (123) 555-0000
+                </address>
+            </div>
+
+            <div class="socials" aria-label="Social links">
+
+                <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+                    <svg width="36" height="36" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="#1E3A8A" />
+                        <path d="M10 8v8l6-4z" fill="#fff" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="X">
+                    <svg width="36" height="36" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="#1E3A8A" />
+                        <path
+                            d="M7 10c1 0 1.5-1 2.5-1-1 0-1.5 1.5-1.5 2.5 0 .2 0 .4.1.6 1-.2 2.1-1 2.7-1.7-.6 1.2-1.6 2.2-2.6 2.6 0 0 1.6.9 3.2.3 1.1-.4 1.9-1.4 2.4-2.5.6-.7 1-1.5 1-2.5 0-.2 0-.4 0-.6 1-.7 1.6-1.7 2-2.8-.9.4-1.8.6-2.7.7.9-.8 1.6-1.9 1.8-3.1-.8.5-1.6.8-2.5 1z"
+                            fill="#fff" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg width="36" height="36" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="#1E3A8A" />
+                        <path
+                            d="M8 10h2v7H8zM9 7.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM12 10h2v1c.9-1.5 3-1.7 3 1v5h-2v-4c0-1.2-.6-1.6-1-1.6s-1 .6-1 1.6v4h-2z"
+                            fill="#fff" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="meta">
+                <p>WDD231 Class Project — Hann Dowyne Valcourt</p>
+                <p>&copy; <span id="currentYear"></span> Chamber of Commerce</p>
+                <p id="lastModified">Last Modified: </p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
