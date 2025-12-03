@@ -1,4 +1,4 @@
-import { places } from '../data/discoverData.mjs';
+import { places } from '../data/discoverdata.mjs';
 
 const grid = document.getElementById("discoverGrid");
 const visitMessage = document.getElementById("visit-message");
