@@ -47,7 +47,7 @@ export const places = [
         "description": "Expansive gardens, conservatories, and educational programs focused on tropical plants.",
         "img": "images/fairchild.webp"
     },
-    
+
     {
         "title": "AmericanAirlines Arena / FTX Arena",
         "address": "601 Biscayne Blvd, Miami, FL 33132",

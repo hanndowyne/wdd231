@@ -12,6 +12,7 @@ function createCard(place, index) {
     const img = document.createElement('img');
     img.src = place.img;
     img.alt = place.title + ' image';
+    img.loading = 'lazy';
     fig.appendChild(img);
 
     const body = document.createElement('div');
