@@ -7,8 +7,11 @@
     --muted: #1A1A1A;
     --radius: 10px;
     --container-width: 1300px;
+    --gap: 1rem;
+    --card-bg: #ffffff;
+    --card-radius: 12px;
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
-
 
 *,
 *::before,
@@ -17,7 +20,6 @@
     margin: 0;
     padding: 0;
 }
-
 
 html,
 body {
@@ -29,8 +31,7 @@ body {
     line-height: 1.6;
 }
 
-
-
+/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -41,11 +42,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
-
 
 header .logo {
     display: flex;
@@ -64,7 +63,6 @@ header h1 {
     font-weight: 700;
     color: #fff;
 }
-
 
 #menuButton {
     display: none;
@@ -89,23 +87,19 @@ nav a.active {
     color: var(--card);
 }
 
-
-
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-
 main {
     padding-top: 1rem;
-    margin-top: 0;
 }
 
-
+/* HERO — combined into one block */
 .hero {
-    background: linear-gradient(90deg, rgba(59, 144, 196, 0.15), rgba(59, 144, 196, 0.25));
+    background: linear-gradient(180deg, #e6f0ff 0%, #fff 100%);
     border-radius: 12px;
     height: 240px;
     width: 100%;
@@ -114,6 +108,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 1.5rem 0;
 }
 
 h1 {
@@ -124,139 +119,94 @@ h1 {
     margin: 1.5rem 0 1rem;
 }
 
-h2,
-h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-}
-
-
-.controls-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
-}
-
-.view-controls {
-    display: flex;
-    gap: 0.75rem;
-}
-
-.view-btn {
-    background: var(--card);
-    border: 2px solid var(--primary);
-    color: var(--primary);
-    font-weight: 700;
-    padding: 0.55rem 1.1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.view-btn.active,
-.view-btn:hover {
-    background: var(--primary);
-    color: #fff;
-}
-
-#membershipFilter {
-    padding: 0.6rem 0.8rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-weight: 600;
-}
-
-
-.members-grid {
+/* DISCOVER GRID */
+.discover-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2rem;
-    margin-bottom: 4rem;
+    gap: var(--gap);
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.member {
-    background: var(--card);
-    border-radius: var(--radius);
-    padding: 1.5rem;
-    border: 1px solid #E5E7EB;
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+/* CARDS */
+.card {
+    background: var(--card-bg);
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.member:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+.card figure {
+    margin: 0;
 }
 
-.member img {
-    width: 200px;
-    height: 120px;
-    object-fit: contain;
-    margin-bottom: 1rem;
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform .35s ease, filter .35s ease;
 }
 
-.member h3 {
-    font-size: 1.2rem;
-    color: var(--primary);
-    margin-bottom: 0.4rem;
+.card:hover img {
+    transform: scale(1.04);
+    filter: saturate(1.12) contrast(1.03);
 }
 
-.member p {
-    color: var(--muted);
-    font-size: 0.95rem;
+.card .card-body {
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex: 1;
 }
 
+.card h2 {
+    font-size: 1.1rem;
+    margin: 0;
+}
 
+.card address {
+    font-style: normal;
+    color: #555;
+    font-size: .9rem;
+}
+
+.card p {
+    flex: 1;
+    margin: 0;
+    color: #333;
+}
+
+.card .btn {
+    margin-top: .5rem;
+    padding: .5rem .75rem;
+    border: none;
+    border-radius: 8px;
+    background: #0066cc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card .btn:focus {
+    outline: 3px solid #cfe4ff;
+}
+
+/* FOOTER — combined into one block */
 .site-footer {
     background: var(--accent);
     color: white;
-    padding: 3rem 2rem 2rem;
-    margin-top: 4rem;
-}
-
-
-.footer-inner {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: flex-start;
-}
-
-
-.footer-inner h3 {
-    color: var(--primary);
-}
-
-
-.footer-inner address {
-    line-height: 1.4;
-    font-style: normal;
-}
-
-.socials {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.footer-inner .meta {
+    padding: 2rem;
+    margin-top: 2rem;
     text-align: center;
-    width: 100%;
-    color: #E0E0E0;
-    font-size: 0.9rem;
-    margin-top: 1rem;
 }
 
-
+/* MEDIA QUERIES */
+@media (max-width: 640px) {
+    .discover-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 @media (max-width: 1024px) {
     .container {
@@ -276,12 +226,13 @@ h3 {
 @media (max-width: 768px) {
     #menuButton {
         display: block;
+        font-size: 2rem;
         background: none;
         border: none;
-        color: white;
-        font-size: 2rem;
+        color: var(--card);
         cursor: pointer;
     }
+
 
     nav ul {
         display: none;
@@ -293,10 +244,5 @@ h3 {
 
     nav.open ul {
         display: flex;
-    }
-
-    .footer-inner {
-        flex-direction: column;
-        text-align: center;
     }
 }
