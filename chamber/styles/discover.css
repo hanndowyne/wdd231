@@ -11,59 +11,7 @@ body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     margin: 0;
     color: #111;
-    background: #f6f7fb
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 1rem
-}
-
-.site-header {
-    background: #003366;
-    color: #fff;
-    padding: .75rem 0
-}
-
-.site-header h1 {
-    margin: 0
-}
-
-.site-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1rem
-}
-
-.site-header nav a {
-    color: #fff;
-    text-decoration: none
-}
-
-.lead {
-    opacity: .9
-}
-
-.visit-message {
-    margin-top: .5rem;
-    padding: .5rem .75rem;
-    background: #fff;
-    border-radius: 8px;
-    display: inline-block
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    background: #f6f7fb;
 }
 
 
@@ -81,24 +29,21 @@ body {
     box-shadow: var(--shadow);
     overflow: hidden;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .card figure {
-    margin: 0
+    margin: 0;
 }
 
 .card img {
     width: 100%;
     height: 200px;
-    object-fit: cover
-}
-
-.card figure img {
+    object-fit: cover;
     transition: transform .35s ease, filter .35s ease;
 }
 
-.card:hover figure img {
+.card:hover img {
     transform: scale(1.04);
     filter: saturate(1.12) contrast(1.03);
 }
@@ -109,24 +54,24 @@ body {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    flex: 1
+    flex: 1;
 }
 
 .card h2 {
     font-size: 1.1rem;
-    margin: 0
+    margin: 0;
 }
 
 .card address {
     font-style: normal;
     color: #555;
-    font-size: .9rem
+    font-size: .9rem;
 }
 
 .card p {
     flex: 1;
     margin: 0;
-    color: #333
+    color: #333;
 }
 
 .card .btn {
@@ -136,50 +81,34 @@ body {
     border-radius: 8px;
     background: #0066cc;
     color: #fff;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .card .btn:focus {
-    outline: 3px solid #cfe4ff
+    outline: 3px solid #cfe4ff;
 }
-
-
-
-@media (max-width:640px) {
-    .discover-grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "card1"
-            "card2"
-            "card3"
-            "card4"
-            "card5"
-            "card6"
-            "card7"
-            "card8";
-    }
-
-    .card img {
-        height: 200px
-    }
-}
-
-
-
-
-
-
-
 
 .hero {
     background: linear-gradient(180deg, #e6f0ff 0%, #fff 100%);
     padding: 1.5rem 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
+
 
 .site-footer {
     padding: 1rem 0;
     background: var(--accent);
     text-align: center;
-    margin-top: 2rem
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 640px) {
+    .discover-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 200px;
+    }
 }
