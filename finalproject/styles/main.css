@@ -33,6 +33,19 @@
     justify-items: center;
 }
 
+.page-title {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d31952;
+}
+
+
+.close-btn {
+    cursor: pointer;
+    font-size: 1.3rem;
+}
 
 .card {
     background: #ffffff;
