@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Aiden",
+        "role": "Main Lead",
+        "personality": "Romantic • Calm • Protective",
+        "image": "images/characters/aiden.webp",
+        "description": "Aiden always puts love first. He believes destiny brought him to his soulmate and will protect that bond at all costs."
+    },
+    {
+        "id": 2,
+        "name": "Lena",
+        "role": "Female Lead",
+        "personality": "Kind • Dreamer • Loyal",
+        "image": "images/characters/lena.webp",
+        "description": "Lena is gentle and full of hope. She builds trust slowly but gives her whole heart once she knows she’s safe."
+    },
+    {
+        "id": 3,
+        "name": "Kai",
+        "role": "Rival • Secret Crush",
+        "personality": "Charming • Confident • Impulsive",
+        "image": "images/characters/kai.webp",
+        "description": "Kai hides his true feelings behind humor and confidence. His love burns bright, but silently."
+    },
+    {
+        "id": 4,
+        "name": "Maya",
+        "role": "Best Friend",
+        "personality": "Energetic • Playful • Smart",
+        "image": "images/characters/maya.webp",
+        "description": "Maya always encourages others to follow love, even if she secretly struggles with her own feelings."
+    },
+    {
+        "id": 5,
+        "name": "Hiro",
+        "role": "Brother Figure",
+        "personality": "Calm • Responsible • Observant",
+        "image": "images/characters/hiro.webp",
+        "description": "Hiro looks out for everyone. He can see love stories forming before anyone else realizes."
+    },
+    {
+        "id": 6,
+        "name": "Yui",
+        "role": "Support Character",
+        "personality": "Brave • Curious • Emotional",
+        "image": "images/characters/yui.webp",
+        "description": "Yui dares to love boldly and believes every romantic moment should be cherished."
+    },
+    {
+        "id": 7,
+        "name": "Sora",
+        "role": "Mysterious Stranger",
+        "personality": "Cold • Quiet • Loyal",
+        "image": "images/characters/sora.webp",
+        "description": "Sora struggles to express emotions but shows his heart through actions, not words."
+    },
+    {
+        "id": 8,
+        "name": "Aria",
+        "role": "New Transfer Student",
+        "personality": "Soft-spoken • Creative • Sweet",
+        "image": "images/characters/aria.webp",
+        "description": "Aria writes romance stories based on hidden feelings she has never confessed."
+    },
+    {
+        "id": 9,
+        "name": "Zane",
+        "role": "Rebellious Outsider",
+        "personality": "Rebellious • Brave • Loyal",
+        "image": "images/characters/zane.webp",
+        "description": "Zane pushes others away but quietly hopes someone will break through his walls."
+    },
+    {
+        "id": 10,
+        "name": "Luna",
+        "role": "Childhood Friend",
+        "personality": "Cheerful • Honest • Hopeful",
+        "image": "images/characters/luna.webp",
+        "description": "Luna has loved the main character since day one, hoping fate will finally turn her way."
+    },
+    {
+        "id": 11,
+        "name": "Riku",
+        "role": "Quiet Artist",
+        "personality": "Shy • Talented • Sensitive",
+        "image": "images/characters/riku.webp",
+        "description": "Riku expresses love through art — the canvas reveals what his voice cannot."
+    },
+    {
+        "id": 12,
+        "name": "Nova",
+        "role": "Popular Icon",
+        "personality": "Confident • Glamorous • Lonely",
+        "image": "images/characters/nova.webp",
+        "description": "Nova shines brightly in public but longs for someone who sees the real person underneath."
+    },
+    {
+        "id": 13,
+        "name": "Eren",
+        "role": "Protective Senior",
+        "personality": "Determined • Mature • Caring",
+        "image": "images/characters/eren.webp",
+        "description": "Eren believes love is a promise you keep forever — no matter the cost."
+    },
+    {
+        "id": 14,
+        "name": "Iris",
+        "role": "Secret Admirer",
+        "personality": "Sweet • Nervous • Hopeful",
+        "image": "images/characters/iris.webp",
+        "description": "Iris writes anonymous letters hoping the one she admires will one day notice her feelings."
+    },
+    {
+        "id": 15,
+        "name": "Leo",
+        "role": "Comedic Relief",
+        "personality": "Funny • Energetic • Caring",
+        "image": "images/characters/leo.webp",
+        "description": "Leo jokes around to keep everyone smiling but hides a heart full of deep affection."
+    }
+]
